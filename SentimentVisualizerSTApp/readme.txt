@@ -11,4 +11,4 @@
 6. collect_youtube_comments로 유튜브를 크롤링(키워드 검색)해 막대그래프와 워드 클라우드, 그리고 sentiment_analysis로 감성 분석의 평균치를 표기 하는 코드, YoutubeCrawler.py를 작성
 
 7. streamlit run 명령어로 YoutubeCrawler.py를 실행
-(이하 상세는 SRS, UCDiagram 참조)
+(이하 상세는 SRS, UCDiagram에 기술)
