@@ -72,4 +72,4 @@ model_path = os.path.join(save_dir, "product_sa_model_lstm.keras")
 joblib.dump(tokenizer, tokenizer_path)
 model.save(model_path)
 
-print(f"\n✅ 모델 저장 완료:\n- Tokenizer: {tokenizer_path}\n- 모델: {model_path}")
+print(f"\n모델 저장 완료:\n- Tokenizer: {tokenizer_path}\n- 모델: {model_path}")
