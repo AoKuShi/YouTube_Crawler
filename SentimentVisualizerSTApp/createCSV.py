@@ -38,4 +38,4 @@ with open(output_file, 'w', newline='', encoding='utf-8-sig') as csvfile:
     writer.writerow(['RawText', 'GeneralPolarity', 'SentimentText', 'SentimentPolarity'])  # 헤더
     writer.writerows(rows)
 
-print(f"✅ 완료: 총 {len(rows)}개의 데이터가 {output_file}에 저장되었습니다.")
+print(f"완료: 총 {len(rows)}개의 데이터가 {output_file}에 저장되었습니다.")
