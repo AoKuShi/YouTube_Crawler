@@ -10,7 +10,6 @@ from konlpy.tag import Okt
 import lib.myTextMining as tm
 import lib.YouTubeCommentCrawler as yc
 
-# 여기에 추가 ─────────────────────────────────
 from sentiment_predictor import SentimentAnalyzer
 import numpy as np
 from tensorflow.keras.preprocessing.sequence import pad_sequences
@@ -19,7 +18,6 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 sa_tokenizer_file = "./lib/model/product_sa_tokenizer.pkl"
 sa_model_file     = "./lib/model/product_sa_model_lstm.keras"
 sa = SentimentAnalyzer(sa_tokenizer_file, sa_model_file)
-# ─────────────────────────────────────────────
 
 # 한글 폰트 설정
 font_path = "c:/Windows/Fonts/malgun.ttf"
@@ -83,7 +81,6 @@ if df is not None and "comment" in df.columns:
     ax_wc.axis("off")
     st.pyplot(fig_wc)
 
-    # ─────────────────────────────────────────────
     # 4. 댓글 감성 분석
     st.subheader("댓글 감성 분석 (전체 댓글 기준)")
 
