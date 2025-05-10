@@ -2,7 +2,7 @@
 
 2. 태깅이 완료된 모든 파일(json)을 통합, createCSV.py를 사용해 csv파일로 변환
 
-3. LSTM으로 감성 분석 모델 생성, 저장(train_model.py)
+3. LSTM으로 감성 분석 모델 학습, 저장(train_model.py)
 
 4. 모델을 불러와 텍스트 감성 분석 함수, sentiment_analysis를 작성(sentiment_predictor.py)
 
