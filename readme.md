@@ -60,7 +60,7 @@
   - 해석 : 모델이 초반에는 검증 데이터에 잘 맞춰 학습하다가, 이후 훈련 데이터에 과도하게 적합(overfitting)되어 검증 성능이 하락한 것으로 보임
 
 ---
-## YouTube 댓글 크롤링(YouTubeCommentCrawler.py)
+## YouTube 댓글 크롤링(lib/YouTubeCommentCrawler.py)
   - 유튜브 클롤링 함수, collect_youtube_comments 작성
     - selenium + BeautifulSoup 기반
   - 검색어로 상위 10개 영상 댓글 자동 수집
