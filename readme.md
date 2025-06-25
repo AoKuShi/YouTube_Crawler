@@ -82,7 +82,7 @@ Streamlit 웹 애플리케이션(YoutubeCrawler.py)
   - ![image](https://github.com/user-attachments/assets/f0db87c7-54a3-42b2-b9ce-5eb469ecce8f)
 
 ---
-# 테크리포트(요약) – 현재 버전
+# 테크리포트(요약)
   - ## 목적  
     - 키워드별 YouTube 댓글 자동 수집 및 감성(긍정·부정·중립) 분석  
   - ## 흐름  
