@@ -3,6 +3,7 @@
 ---
 개요 : YouTube 댓글 감성 분석 웹 프로젝트
   - 사용자 입력 키워드로 YouTube 댓글을 자동 수집하고, LLM 기반 감성 분석을 통해 긍정·부정·중립으로 라벨링한 뒤, 웹 인터페이스에서 시각화 및 통계 제공
+  - 과정 : 데이터 준비 및 전처리 → 모델 학습 및 저장 → YouTube 댓글 크롤링 → Streamlit 웹 애플리케이션
   - python 인터프리터 설정 : requirements.txt 참고
 
 ---
@@ -86,7 +87,7 @@ Streamlit 웹 애플리케이션(YoutubeCrawler.py)
   - ## 목적  
     - 키워드별 YouTube 댓글 자동 수집 및 감성(긍정·부정·중립) 분석  
   - ## 흐름  
-    - 댓글 크롤링 → LLM 라벨링 → LSTM 모델 학습/예측 → Streamlit UI 시각화  
+    - 댓글 크롤링 + LLM 라벨링 → LSTM 모델 학습/예측 → Streamlit UI 시각화  
   - ## 주요 기술  
     - Selenium/BeautifulSoup, LangChain LLM, TensorFlow Keras(LSTM), Streamlit  
 
