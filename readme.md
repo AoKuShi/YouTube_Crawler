@@ -13,7 +13,7 @@
 
 ### <기존 LLM감성 분석 페이지(LLM_Labeling/SentimentLabelingSTApp.py)>
   - ![image](https://github.com/user-attachments/assets/bebc4f9f-e677-4fe0-b864-fe034cf5258c)
-  - 엑셀파일을 업로드해 작업을 진행
+  - 크롤링 후 엑셀파일을 업로드해 작업을 진행(크롤링 따로 감성분석 라벨링 따로)
 
 ### <새로운 LLM감성 분석 페이지(YoutubeCrawlerForDataV2.py)>
   - ![image](https://github.com/user-attachments/assets/9487180a-2f73-4704-96b1-8a33e027e847)
