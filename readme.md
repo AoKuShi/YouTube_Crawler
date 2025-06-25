@@ -50,9 +50,9 @@
     - 드롭아웃, L2 정규화 추가로 모델 일반화 강화
 
 <그래프>
-  ![download01](https://github.com/user-attachments/assets/d63a9106-dfdf-4702-94bd-bd9c18bcc589)
-  ![download02](https://github.com/user-attachments/assets/96b959fb-eb2e-45a7-9015-fd84a79ea9ee)
-  ![download03](https://github.com/user-attachments/assets/c429fed8-2840-4010-84e7-fbc2200de48f)
+  - ![download01](https://github.com/user-attachments/assets/d63a9106-dfdf-4702-94bd-bd9c18bcc589)
+  - ![download02](https://github.com/user-attachments/assets/96b959fb-eb2e-45a7-9015-fd84a79ea9ee)
+  - ![download03](https://github.com/user-attachments/assets/c429fed8-2840-4010-84e7-fbc2200de48f)
   - 모델이 초반에는 검증 데이터에 잘 맞춰 학습하다가, 이후 훈련 데이터에 과도하게 적합(overfitting)되어 검증 성능이 하락한 것으로 보임
 
 ---
