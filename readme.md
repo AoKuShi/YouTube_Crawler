@@ -10,7 +10,7 @@
       - 프롬프트 수정 1 : 긍정, 부정, 중립 라벨링을 정수형(1, -1, 0)으로 전환
       - 프롬프트 수정 2 : 토큰 수를 줄이기 위해 영문 프롬포트로 작성 
 
-<SentimentLabelingSTApp.py 실행>
+<SentimentLabelingSTApp.py>
 
 ![image](https://github.com/user-attachments/assets/bebc4f9f-e677-4fe0-b864-fe034cf5258c)
 
@@ -22,7 +22,7 @@
 
 ![image](https://github.com/user-attachments/assets/3d6445ae-b5d4-4182-8626-4e33ac88e6fa)
 
-<YoutubeCrawlerForDataV2.py 실행>
+<YoutubeCrawlerForDataV2.py>
 
 ![image](https://github.com/user-attachments/assets/9487180a-2f73-4704-96b1-8a33e027e847)
 
@@ -35,6 +35,30 @@
     - Embedding → LSTM → Dense
   - EarlyStopping 적용 후 최적 모델 저장
   - Tokenizer와 모델을 lib/model 폴더에 저장
+
+<훈련 과정>
+
+  ![스크린샷 2025-06-25 152417](https://github.com/user-attachments/assets/9089413f-561e-4f81-a387-e0ebfdd9b2a1)
+  ![스크린샷 2025-06-25 152426](https://github.com/user-attachments/assets/fb42bdc6-a6ef-463d-88b5-91f712928a64)
+  - 클래스별 특징
+    - 긍정: Precision·Recall 모두 높아(0.96/0.98), 안정적
+    - 부정: Recall이 0.93으로 높으나 Precision 0.89라 소수의 오탐 있음
+    - 중립: Recall이 0.46으로 매우 낮아(절반 이상이 다른 클래스로 분류됨), F1도 0.58에 그침
+  - 종합 평가
+    - 과적합 초기 신호: 검증 손실과 정확도가 1~2 에포크 이후 하락세
+    - 중립 클래스 약함: 중립 샘플이 부정·긍정으로 많이 오분류
+  - 개선 방안
+    - 조기 종료 시점 조정: patience를 1–2로 줄여 과적합 방지
+    - 클래스 가중치(class_weight) 부여 또는 오버샘플링으로 중립 데이터 비율 높이기
+    - 드롭아웃, L2 정규화 추가로 모델 일반화 강화
+
+<그레프>
+
+  ![download01](https://github.com/user-attachments/assets/d63a9106-dfdf-4702-94bd-bd9c18bcc589)
+  ![download02](https://github.com/user-attachments/assets/96b959fb-eb2e-45a7-9015-fd84a79ea9ee)
+  ![download03](https://github.com/user-attachments/assets/c429fed8-2840-4010-84e7-fbc2200de48f)
+  - 모델이 초반에는 검증 데이터에 잘 맞춰 학습하다가, 이후 훈련 데이터에 과도하게 적합(overfitting)되어 검증 성능이 하락한 것으로 보임
+
 ---
 YouTube 댓글 크롤링(YouTubeCommentCrawler.py)
   - 유튜브 클롤링 함수, collect_youtube_comments 작성
