@@ -56,7 +56,7 @@
   - ![download01](https://github.com/user-attachments/assets/d63a9106-dfdf-4702-94bd-bd9c18bcc589)
   - ![download02](https://github.com/user-attachments/assets/96b959fb-eb2e-45a7-9015-fd84a79ea9ee)
   - ![458728646-c429fed8-2840-4010-84e7-fbc2200de48f](https://github.com/user-attachments/assets/deeed725-5f57-4f93-b63c-d33926efb869)
-  - 모델이 초반에는 검증 데이터에 잘 맞춰 학습하다가, 이후 훈련 데이터에 과도하게 적합(overfitting)되어 검증 성능이 하락한 것으로 보임
+  - 해석 : 모델이 초반에는 검증 데이터에 잘 맞춰 학습하다가, 이후 훈련 데이터에 과도하게 적합(overfitting)되어 검증 성능이 하락한 것으로 보임
 
 ---
 ## YouTube 댓글 크롤링(YouTubeCommentCrawler.py)
