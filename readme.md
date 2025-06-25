@@ -52,7 +52,7 @@ Streamlit 웹 애플리케이션
 
 <분석 결과 예시 - 부정>
 
-![image](https://github.com/user-attachments/assets/9205bb8b-5744-4b9f-a09d-b426ff197ae5)
+![image](https://github.com/user-attachments/assets/44eab064-77eb-4997-b07d-df6885c00a19)
 
 <use-case diagram>
 
