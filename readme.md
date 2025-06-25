@@ -36,16 +36,16 @@
   - EarlyStopping 적용 후 최적 모델 저장
   - Tokenizer와 모델을 lib/model 폴더에 저장
 ---
-YouTube 댓글 크롤링
+YouTube 댓글 크롤링(YouTubeCommentCrawler.py)
   - 유튜브 클롤링 함수, collect_youtube_comments 작성
     - selenium + BeautifulSoup 기반
   - 검색어로 상위 10개 영상 댓글 자동 수집
   - 댓글 내용을 리스트로 반환
 ---
-Streamlit 웹 애플리케이션
+Streamlit 웹 애플리케이션(YoutubeCrawler.py)
   - 검색어 입력, CSV 저장/업로드 UI 구현
   - 키워드 빈도그래프, 워드클라우드 시각화
-  - sentiment_predictor로 감성 분석 후 평균 확률 테이블 출력
+  - sentiment_predictor로 감성 분석 후 평균 확률 테이블 출력(sentiment_predictor.py)
 ---
 <분석 결과 예시 - 긍정>
 
