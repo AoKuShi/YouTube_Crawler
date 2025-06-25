@@ -1,8 +1,10 @@
 # YouTube Crawler
+
 ---
 개요 : YouTube 댓글 감성 분석 웹 프로젝트
   - 사용자 입력 키워드로 YouTube 댓글을 자동 수집하고, LLM 기반 감성 분석을 통해 긍정·부정·중립으로 라벨링한 뒤, 웹 인터페이스에서 시각화 및 통계 제공
   - python 인터프리터 설정 : requirements.txt 참고
+
 ---
 데이터 준비 및 전처리
   - 기존의 유트브 댓글 크롤러(YoutubeCrawlerForData.py)에 myLangchainService.py(LLM감성분석 코드)를 적용 시켜 댓글 크롤링과 라벨링 작업을 동시에 진행하는 코드(YoutubeCrawlerForDataV2.py)를 작성
@@ -24,6 +26,7 @@
 
 <최종 라벨링 데이터>
   ![image](https://github.com/user-attachments/assets/0f87bdb8-9db6-4379-9bc7-cf459add5017)
+
 ---
 모델 학습 및 저장
   - train_model.py로 LSTM 모델 학습
@@ -46,7 +49,7 @@
     - 클래스 가중치(class_weight) 부여 또는 오버샘플링으로 중립 데이터 비율 높이기
     - 드롭아웃, L2 정규화 추가로 모델 일반화 강화
 
-<그레프>
+<그래프>
   ![download01](https://github.com/user-attachments/assets/d63a9106-dfdf-4702-94bd-bd9c18bcc589)
   ![download02](https://github.com/user-attachments/assets/96b959fb-eb2e-45a7-9015-fd84a79ea9ee)
   ![download03](https://github.com/user-attachments/assets/c429fed8-2840-4010-84e7-fbc2200de48f)
@@ -58,11 +61,13 @@ YouTube 댓글 크롤링(YouTubeCommentCrawler.py)
     - selenium + BeautifulSoup 기반
   - 검색어로 상위 10개 영상 댓글 자동 수집
   - 댓글 내용을 리스트로 반환
+
 ---
 Streamlit 웹 애플리케이션(YoutubeCrawler.py)
   - 검색어 입력, CSV 저장/업로드 UI 구현
   - 키워드 빈도그래프, 워드클라우드 시각화
   - sentiment_predictor로 감성 분석 후 평균 확률 테이블 출력(sentiment_predictor.py)
+
 ---
 <분석 결과 예시 - 긍정>
   ![image](https://github.com/user-attachments/assets/106608e1-269a-4910-9b9e-7e68047e1d70)
