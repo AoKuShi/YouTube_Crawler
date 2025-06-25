@@ -8,13 +8,14 @@
 
 ---
 데이터 준비 및 전처리
-  - 기존의 유트브 댓글 크롤러(YoutubeCrawlerForData.py)에 myLangchainService.py(LLM감성분석 코드)를 적용 시켜 댓글 크롤링과 라벨링 작업을 동시에 진행하는 코드(YoutubeCrawlerForDataV2.py)를 작성
-  - myLangchainService.py는 LLM모델명과 엔드포인트, 프롬프트 수정(myLangchainServiceForYC.py) 후 적용
+  - 기존의 유트브 댓글 크롤러에 LLM_Labeling/myLangchainService.py(LLM감성분석 코드)를 적용 시켜 댓글 크롤링과 라벨링 작업을 동시에 진행하는 코드(YoutubeCrawlerForDataV2.py)를 작성
+  - LLM_Labeling/myLangchainService.py는 LLM모델명과 엔드포인트, 프롬프트 수정(lib/myLangchainServiceForYC.py) 후 적용
       - 프롬프트 수정 1 : 긍정, 부정, 중립 라벨링을 정수형(1, -1, 0)으로 전환
       - 프롬프트 수정 2 : 토큰 수를 줄이기 위해 영문 프롬포트로 작성 
 
 <LLM_Labeling/SentimentLabelingSTApp.py>
   - ![image](https://github.com/user-attachments/assets/bebc4f9f-e677-4fe0-b864-fe034cf5258c)
+  - 기존 LLM감성 분석 페이지 : 엑셀파일을 업로드해 작업을 진행
 
 <gemma-3-4b LLM모델 사용>
   - ![image](https://github.com/user-attachments/assets/dc0d81fa-1c37-4550-ad0f-a14865c29f7b)
@@ -24,6 +25,7 @@
 
 <YoutubeCrawlerForDataV2.py>
   - ![image](https://github.com/user-attachments/assets/9487180a-2f73-4704-96b1-8a33e027e847)
+  - 새로운 LLM감성 분석 페이지 : 크롤링과 감성분석을 동시에 진행
 
 <최종 라벨링 데이터>
   - ![image](https://github.com/user-attachments/assets/0f87bdb8-9db6-4379-9bc7-cf459add5017)
