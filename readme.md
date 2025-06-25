@@ -63,7 +63,7 @@
 ## YouTube 댓글 크롤링(lib/YouTubeCommentCrawler.py)
   - 유튜브 클롤링 함수, collect_youtube_comments 작성
     - selenium + BeautifulSoup 기반
-  - 검색어로 상위 10개 영상 댓글 자동 수집
+  - 검색어로 상위 5개 영상 댓글 자동 수집
   - 댓글 내용을 리스트로 반환
 
 ---
