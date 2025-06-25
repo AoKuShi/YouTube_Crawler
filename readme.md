@@ -42,17 +42,13 @@ Streamlit 웹 애플리케이션
   - sentiment_predictor로 감성 분석 후 평균 확률 테이블 출력
 
 <분석 결과 예시 - 긍정>
-
 ![image](https://github.com/user-attachments/assets/106608e1-269a-4910-9b9e-7e68047e1d70)
 
 <분석 결과 예시 - 부정>
-
 ![image](https://github.com/user-attachments/assets/9205bb8b-5744-4b9f-a09d-b426ff197ae5)
 
 <use-case diagram>
-
 ![image](https://github.com/user-attachments/assets/363218dd-eca8-4112-a8a0-189a594618f6)
 
 <요구사항 명세서>
-
 ![image](https://github.com/user-attachments/assets/f0db87c7-54a3-42b2-b9ce-5eb469ecce8f)
