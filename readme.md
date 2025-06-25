@@ -13,9 +13,9 @@
       - 프롬프트 수정 1 : 긍정, 부정, 중립 라벨링을 정수형(1, -1, 0)으로 전환
       - 프롬프트 수정 2 : 토큰 수를 줄이기 위해 영문 프롬포트로 작성 
 
-<LLM_Labeling/SentimentLabelingSTApp.py>
+<기존 LLM감성 분석 페이지(LLM_Labeling/SentimentLabelingSTApp.py)>
   - ![image](https://github.com/user-attachments/assets/bebc4f9f-e677-4fe0-b864-fe034cf5258c)
-  - 기존 LLM감성 분석 페이지 : 엑셀파일을 업로드해 작업을 진행
+  - 엑셀파일을 업로드해 작업을 진행
 
 <gemma-3-4b LLM모델 사용>
   - ![image](https://github.com/user-attachments/assets/dc0d81fa-1c37-4550-ad0f-a14865c29f7b)
@@ -23,9 +23,9 @@
 <LLM모델 라벨링 프롬프트>
   - ![image](https://github.com/user-attachments/assets/3d6445ae-b5d4-4182-8626-4e33ac88e6fa)
 
-<YoutubeCrawlerForDataV2.py>
+<새로운 LLM감성 분석 페이지(YoutubeCrawlerForDataV2.py)>
   - ![image](https://github.com/user-attachments/assets/9487180a-2f73-4704-96b1-8a33e027e847)
-  - 새로운 LLM감성 분석 페이지 : 크롤링과 감성분석을 동시에 진행
+  - 크롤링과 감성분석을 동시에 진행
 
 <최종 라벨링 데이터>
   - ![image](https://github.com/user-attachments/assets/0f87bdb8-9db6-4379-9bc7-cf459add5017)
