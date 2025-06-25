@@ -25,7 +25,7 @@
 ### <LLM모델 라벨링 프롬프트>
   - ![image](https://github.com/user-attachments/assets/3d6445ae-b5d4-4182-8626-4e33ac88e6fa)
     - 프롬프트 수정 1 : 긍정, 부정, 중립 라벨링을 정수형(1, -1, 0)으로 전환
-    - 프롬프트 수정 2 : 토큰 수를 줄이기 위해 영문 프롬포트로 작성
+    - 프롬프트 수정 2 : 토큰 수를 줄이기 위해 영문 프롬프트로 작성
 
 ### <최종 라벨링 데이터>
   - ![image](https://github.com/user-attachments/assets/0f87bdb8-9db6-4379-9bc7-cf459add5017)
