@@ -54,7 +54,7 @@ Streamlit 웹 애플리케이션
 
 ![image](https://github.com/user-attachments/assets/44eab064-77eb-4997-b07d-df6885c00a19)
 
-<use-case diagram>
+<유스케이스 다이어그램>
 
 ![image](https://github.com/user-attachments/assets/363218dd-eca8-4112-a8a0-189a594618f6)
 
