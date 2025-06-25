@@ -64,8 +64,8 @@ Streamlit 웹 애플리케이션
 
 ---
 # 테크리포트(요약)
-  목적: 키워드별 YouTube 댓글 자동 수집 및 감성(긍정·부정·중립) 분석
-  흐름: 댓글 크롤링 + LLM 라벨링 → LSTM 모델 학습/예측 → Streamlit UI 시각화
-  주요 기술: Selenium/BeautifulSoup, Langchain LLM, TensorFlow Keras(LSTM), Streamlit
-  성과: 댓글 200개 수집 3초, LLM 라벨링 정확도 85%, 모델 정확도 88%
-  향후 과제: 크롤링 시 GPU 사용으로 속도up, 대시보드 고도화(검색할 영상 갯수, 댓글 수, 검색 카테고리 등 커스터마이징이 가능하게 변경)
+  - ## 목적: 키워드별 YouTube 댓글 자동 수집 및 감성(긍정·부정·중립) 분석
+  - ## 흐름: 댓글 크롤링 + LLM 라벨링 → LSTM 모델 학습/예측 → Streamlit UI 시각화
+  - ## 주요 기술: Selenium/BeautifulSoup, Langchain LLM, TensorFlow Keras(LSTM), Streamlit
+  - ## 성과: 댓글 200개 수집 3초, LLM 라벨링 정확도 85%, 모델 정확도 88%
+  - ## 향후 과제: 크롤링 시 GPU 사용으로 속도up, 대시보드 고도화(검색할 영상 갯수, 댓글 수, 검색 카테고리 등 커스터마이징이 가능하게 변경)
